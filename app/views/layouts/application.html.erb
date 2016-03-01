@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= favicon_link_tag 'favicon2.ico' %>
+  <title>Lovvyvoy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- Header -->
+    <div id="header">
+
+        <div class="top">
+
+            <!-- Logo -->
+                <div id="logo">
+                    <span class="image avatar48"><%= image_tag("LogoIcon2.png", :alt => "foto") %></span>
+                    <h1 id="title">Benjamin Cordero</h1>
+                    <p><i>Bitacora del Capitán</i></p>
+                </div>
+
+            <!-- Nav -->
+                <nav id="nav">
+                    <!--
+
+                        Prologue's nav expects links in one of two formats:
+
+                        1. Hash link (scrolls to a different section within the page)
+
+                           <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                        2. Standard link (sends the user to another page/site)
+
+                           <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+                    -->
+                    <ul>
+                        <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                        <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                        <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About</span></a></li>
+                        
+                        <li><a href="#contact">2016</a></li>
+                        
+                        <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-street-view">Crisalys - <i style="font-size: 0.6em"> Interview</i></span></a></li>
+                        
+                        <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-street-view"> Munsoon - <i style="font-size: 0.6em"> Interview</i></span></a></li>
+                        
+                        <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-gamepad">Japi Niu Yir - <i style="font-size: 0.6em"> Videogame</i></span></a></li>
+                        
+                        <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-gamepad">GGJ Jam 2016 - <i style="font-size: 0.6em"> Videogame</i></span></a></li>
+                        
+                        
+                        <li><a href="http://www.upthecity.com/pusha-t-el-preview-con-calidad-de-trabajo-completo/" id="footwork-link" ><span class="icon fa-arrow-circle-up">Darkest Before Dawn - <i style="font-size: 0.6em"> Review</i></span></a></li>
+                        
+                        <li><a href="#contact">2015</a></li>
+                        
+                        <li><a href="http://loud.cl/54477/los-mejores-discos-del-2015-segun-loud-cl" id="top2015-link" ><span class="icon fa-volume-up">Mejores Discos - <i style="font-size: 0.6em"> Lists</i></span></a></li>
+                        
+                        <li><a href="http://loud.cl/54252/ducktails-protistas-17-de-diciembre-ex-oz-la-manera-redonda-de-cerrar-un-ciclo" id="ducktails-link" ><span class="icon fa-volume-up">Ducktails - <i style="font-size: 0.6em"> Concert</i></span></a></li>
+                        
+                        <li><a href="http://loud.cl/53392/jonwayne-jonwayne-is-retired-ep-2015" id="jonwayne-link" ><span class="icon fa-volume-up">Jonwayne is Retired - <i style="font-size: 0.6em"> Review</i></span></a></li>
+                        
+                        <li><a href="http://loud.cl/53152/dr-dre-compton-2015" id="compton-link" ><span class="icon fa-volume-up">Compton - <i style="font-size: 0.6em"> Review</i></span></a></li>
+                        
+                        <li><a href="http://www.upthecity.com/el-footwork-ha-vuelto/" id="footwork-link" ><span class="icon fa-arrow-circle-up">Footwork - <i style="font-size: 0.6em"> Article</i></span></a></li>
+                        
+                        <li><a href="http://loud.cl/52086/thundercat-nicolar-jaar-dos-eps-del-ano-que-se-consumen-entre-lo-eclectico-y-el-baile-lento" id="thundercat-link" ><span class="icon fa-volume-up">Thundercat & Jaar - <i style="font-size: 0.6em"> Review</i></span></a></li>
+                        
+                        <li><a href="http://loud.cl/52176/wavves-x-cloud-nothings-no-life-for-me-2015" id="cloudX-link" ><span class="icon fa-volume-up">No Life For Me - <i style="font-size: 0.6em"> Review</i></span></a></li>
+                            
+                        <li><a href="http://loud.cl/51802/scallops-hotel-plantea-una-nueva-vision-del-rap-alejado-del-dineropistola-codeina-el-art-rap-existe" id="scallops-link" ><span class="icon fa-volume-up">Plain Speaking - <i style="font-size: 0.6em"> Review</i></span></a></li>
+                    </ul>
+                </nav>
+
+        </div>
+
+    </div>
+
+<%= yield %>
+
+<!-- Footer -->
+    <div id="footer">
+                <ul class="icons">
+                    <li><a href="https://twitter.com/BenjaaCrdo" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/benjamin.cordero" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://github.com/BenjaminCordero" class="icon fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="https://www.instagram.com/benja_cordero" class="icon fa-instagram"><span class="label">Dribbble</span></a></li>
+                    <li><a href="mailto:benjamincordero@hotmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+
+        <!-- Copyright -->
+            <ul class="copyright">
+                <li>&copy; Made by Benjamin Cordero a.k.a Lovvyvoy</li><li>Base Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+
+    </div>
+
+</body>
+</html>
